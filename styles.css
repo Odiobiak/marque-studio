@@ -293,3 +293,101 @@ img{ max-width:100%; display:block; }
   [data-reveal]{ opacity:1; transform:none; transition:none; }
   html{ scroll-behavior:auto; }
 }
+
+/* ============================================================
+   Additions — previews, forms, intake estimator
+   ============================================================ */
+
+/* Inline text link */
+.ilink{ color:var(--brass); border-bottom:1px solid var(--line); transition:color .25s,border-color .25s; }
+.ilink:hover{ color:var(--ink); border-color:var(--ink); }
+
+/* ---------- Scrollable work previews ---------- */
+.case__reset{ margin-left:auto; background:none; border:0; color:var(--ink-2); font:inherit; font-size:.72rem; cursor:pointer; letter-spacing:.02em; }
+.case__reset:hover{ color:var(--ink); }
+.case__stage{ position:relative; aspect-ratio:16/10; overflow:hidden; background:var(--card); }
+.case__stage[data-loaded]{ aspect-ratio:auto; height:440px; }
+.case__stage .case__cover{ position:absolute; inset:0; width:100%; height:100%; aspect-ratio:auto; }
+.case__iframe{ width:100%; height:100%; border:0; display:block; background:#fff; }
+.case__play{
+  position:absolute; bottom:16px; left:50%; transform:translateX(-50%);
+  background:var(--paper); color:var(--ink); border:0; border-radius:100px;
+  font-family:var(--sans); font-size:.82rem; font-weight:500; padding:.6em 1.2em; cursor:pointer;
+  box-shadow:0 8px 20px -8px rgba(0,0,0,.45); transition:transform .3s, background .3s, color .3s;
+}
+.case__play:hover{ transform:translateX(-50%) translateY(-2px); background:var(--brass); color:#fff; }
+.cover__lock{ font-family:var(--sans); font-size:.72rem; letter-spacing:.05em; color:#9a824f; margin-top:.3rem; }
+
+/* ---------- Forms (shared) ---------- */
+.field{ display:flex; flex-direction:column; gap:.4rem; margin-bottom:1rem; text-align:left; }
+.field span{ font-size:.76rem; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-2); }
+.field input,.field textarea{
+  font:inherit; font-size:.95rem; color:var(--ink); background:var(--paper);
+  border:1px solid var(--line); border-radius:10px; padding:.75em .9em; width:100%;
+  transition:border-color .25s, box-shadow .25s;
+}
+.field input:focus,.field textarea:focus{ outline:none; border-color:var(--brass); box-shadow:0 0 0 3px rgba(169,136,79,.16); }
+.field textarea{ resize:vertical; }
+.cform__note{ font-size:.85rem; margin:.9rem 0 0; min-height:1em; }
+.cform__note.is-ok{ color:#5c6b39; }
+.cform__note.is-err{ color:#a1442f; }
+
+/* Contact form on homepage */
+.contact__inner{ max-width:560px; }
+.cform{ max-width:520px; margin:1.6rem auto 0; }
+.cform__row{ display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.cform .btn{ width:100%; margin-top:.4rem; }
+.contact__or{ margin:1.4rem 0 0; font-size:.9rem; color:var(--ink-2); }
+
+/* ---------- Intake page ---------- */
+.intake{ padding:clamp(2rem,5vw,3.5rem) 0 clamp(4rem,8vw,6rem); }
+.intake__head{ max-width:62ch; margin-bottom:clamp(2rem,4vw,3rem); }
+.intake__title{ font-family:var(--serif); font-weight:360; font-size:clamp(2.2rem,5.2vw,3.4rem); line-height:1.02; letter-spacing:-.015em; margin:.5rem 0 1rem; }
+.intake__sub{ color:var(--ink-2); font-size:1.1rem; max-width:54ch; margin:0; }
+
+.intake__grid{ display:grid; grid-template-columns:1fr 340px; gap:clamp(1.5rem,3vw,3rem); align-items:start; }
+.intake__form{ display:flex; flex-direction:column; gap:1.5rem; min-width:0; }
+
+.fs{ border:1px solid var(--line); border-radius:16px; padding:clamp(1.25rem,2.5vw,1.75rem); margin:0; background:var(--card); }
+.fs legend{ font-family:var(--serif); font-size:1.35rem; font-weight:440; display:flex; align-items:center; gap:.6rem; padding:0; }
+.fs legend b{ display:inline-grid; place-items:center; width:27px; height:27px; border-radius:50%; background:var(--ink); color:var(--paper); font-family:var(--sans); font-size:.82rem; font-weight:500; }
+.fs__row{ display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.1rem; }
+.fs__q{ font-size:.92rem; font-weight:500; letter-spacing:.01em; margin:1.4rem 0 .75rem; }
+.fs__q em{ color:var(--ink-2); font-style:italic; font-weight:400; }
+.fs .field{ margin:1.1rem 0 0; }
+
+/* Chips */
+.chips{ display:flex; flex-wrap:wrap; gap:.55rem; }
+.chip{ position:relative; cursor:pointer; }
+.chip input{ position:absolute; opacity:0; width:0; height:0; }
+.chip span{
+  display:inline-flex; align-items:center; gap:.5em;
+  border:1px solid var(--line); border-radius:100px; padding:.6em 1.05em;
+  font-size:.88rem; color:var(--ink); background:var(--paper);
+  transition:border-color .2s, background .2s, color .2s;
+}
+.chip span i{ font-style:normal; color:var(--ink-2); font-size:.8rem; }
+.chip:hover span{ border-color:var(--ink-2); }
+.chip input:checked + span{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
+.chip input:checked + span i{ color:var(--brass-2); }
+.chip input:focus-visible + span{ box-shadow:0 0 0 3px rgba(169,136,79,.28); }
+.chip--gold input:checked + span{ background:var(--brass); border-color:var(--brass); color:#fff; }
+.chip--gold input:checked + span i{ color:#fff; }
+
+/* Estimate rail */
+.estimate{ position:sticky; top:88px; }
+.estimate__card{ border:1px solid var(--ink); border-radius:18px; padding:1.6rem; background:var(--card); box-shadow:0 24px 50px -34px rgba(23,19,14,.5); }
+.estimate__label{ font-size:.74rem; letter-spacing:.16em; text-transform:uppercase; color:var(--brass); margin:0 0 .45rem; font-weight:500; }
+.estimate__range{ font-family:var(--serif); font-size:2.3rem; font-weight:420; letter-spacing:-.02em; margin:0; line-height:1; }
+.estimate__monthly{ font-size:.95rem; color:var(--ink-2); margin:.5rem 0 0; }
+.estimate__items{ list-style:none; margin:1.2rem 0; padding:1.2rem 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; flex-direction:column; gap:.5rem; }
+.estimate__items:empty{ display:none; }
+.estimate__items li{ font-size:.85rem; color:var(--ink-2); }
+.estimate__disclaimer{ font-size:.78rem; color:var(--ink-2); line-height:1.55; margin:0 0 1.2rem; }
+.estimate__card .btn{ margin-bottom:.6rem; }
+
+@media (max-width:900px){
+  .intake__grid{ grid-template-columns:1fr; }
+  .estimate{ position:static; }
+  .fs__row,.cform__row{ grid-template-columns:1fr; }
+}

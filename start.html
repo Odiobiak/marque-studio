@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Start a project — Marque Studio</title>
+  <meta name="description" content="Tell us about your project and get an instant budget estimate. A short brief helps us design the site you need." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="index.html" aria-label="Marque Studio home">
+        <span class="brand__mark" aria-hidden="true">M</span>
+        <span class="brand__name">Marque<span class="brand__thin"> Studio</span></span>
+      </a>
+      <a href="index.html" class="btn btn--sm btn--ghost">← Back to site</a>
+    </div>
+  </header>
+
+  <main id="top" class="intake">
+    <div class="wrap">
+      <div class="intake__head" data-reveal>
+        <p class="label">Start a project</p>
+        <h1 class="intake__title">Tell us what you're building.</h1>
+        <p class="intake__sub">A few quick questions. You'll see a live budget estimate as you go — no obligation, just a starting point. We reply within a day.</p>
+      </div>
+
+      <form class="intake__grid" id="brief" novalidate>
+
+        <div class="intake__form">
+
+          <!-- 1. About you -->
+          <fieldset class="fs" data-reveal>
+            <legend><b>1</b> About you</legend>
+            <div class="fs__row">
+              <label class="field"><span>Your name *</span><input type="text" name="name" autocomplete="name" required /></label>
+              <label class="field"><span>Email *</span><input type="email" name="email" autocomplete="email" required /></label>
+            </div>
+            <label class="field"><span>Phone / WhatsApp (optional)</span><input type="tel" name="phone" autocomplete="tel" /></label>
+          </fieldset>
+
+          <!-- 2. The project -->
+          <fieldset class="fs" data-reveal>
+            <legend><b>2</b> The project</legend>
+            <p class="fs__q">What are we building?</p>
+            <div class="chips" data-group="type">
+              <label class="chip"><input type="radio" name="type" value="Portfolio" checked /><span>Portfolio</span></label>
+              <label class="chip"><input type="radio" name="type" value="Personal brand" /><span>Personal brand</span></label>
+              <label class="chip"><input type="radio" name="type" value="Wedding / Event" /><span>Wedding / Event</span></label>
+              <label class="chip"><input type="radio" name="type" value="Business" /><span>Small business</span></label>
+              <label class="chip"><input type="radio" name="type" value="Other" /><span>Something else</span></label>
+            </div>
+
+            <p class="fs__q">How big is it?</p>
+            <div class="chips" data-group="size">
+              <label class="chip"><input type="radio" name="size" value="One page" data-price="300" checked /><span>One page <i>from $300</i></span></label>
+              <label class="chip"><input type="radio" name="size" value="2–3 pages" data-price="600" /><span>2–3 pages <i>from $600</i></span></label>
+              <label class="chip"><input type="radio" name="size" value="4–6 pages" data-price="1000" /><span>4–6 pages <i>from $1,000</i></span></label>
+              <label class="chip"><input type="radio" name="size" value="7+ / complex" data-price="1500" /><span>7+ / complex <i>from $1,500</i></span></label>
+            </div>
+
+            <p class="fs__q">Features you'd like <em>(pick any)</em></p>
+            <div class="chips chips--multi" data-group="features">
+              <label class="chip"><input type="checkbox" name="features" value="Photo gallery" data-price="150" /><span>Photo gallery <i>+$150</i></span></label>
+              <label class="chip"><input type="checkbox" name="features" value="RSVP & guest list" data-price="250" /><span>RSVP &amp; guest list <i>+$250</i></span></label>
+              <label class="chip"><input type="checkbox" name="features" value="Gift registry" data-price="75" /><span>Gift registry <i>+$75</i></span></label>
+              <label class="chip"><input type="checkbox" name="features" value="Custom animation" data-price="200" /><span>Signature animation <i>+$200</i></span></label>
+              <label class="chip"><input type="checkbox" name="features" value="Blog / news" data-price="180" /><span>Blog / news <i>+$180</i></span></label>
+              <label class="chip"><input type="checkbox" name="features" value="Copywriting help" data-price="200" /><span>Copywriting help <i>+$200</i></span></label>
+              <label class="chip"><input type="checkbox" name="features" value="Domain & email setup" data-price="75" /><span>Domain &amp; email setup <i>+$75</i></span></label>
+              <label class="chip"><input type="checkbox" name="features" value="Multi-language" data-price="200" /><span>Multi-language <i>+$200</i></span></label>
+            </div>
+
+            <p class="fs__q">Premium add-ons</p>
+            <div class="chips chips--multi" data-group="addons">
+              <label class="chip chip--gold"><input type="checkbox" name="addons" value="AI concierge" data-price="800" data-monthly="49" /><span>AI concierge <i>+$800 &amp; $49/mo</i></span></label>
+              <label class="chip chip--gold"><input type="checkbox" name="addons" value="Care & hosting plan" data-monthly="35" /><span>Care &amp; hosting <i>$35/mo</i></span></label>
+            </div>
+
+            <p class="fs__q">Timeline</p>
+            <div class="chips" data-group="timeline">
+              <label class="chip"><input type="radio" name="timeline" value="Flexible" data-rush="1" checked /><span>Flexible</span></label>
+              <label class="chip"><input type="radio" name="timeline" value="Standard (2–3 wks)" data-rush="1" /><span>Standard · 2–3 wks</span></label>
+              <label class="chip"><input type="radio" name="timeline" value="Rush (under a week)" data-rush="1.25" /><span>Rush · under a week <i>+25%</i></span></label>
+            </div>
+            <label class="field"><span>Target launch date (optional)</span><input type="date" name="launch" /></label>
+          </fieldset>
+
+          <!-- 3. The feel -->
+          <fieldset class="fs" data-reveal>
+            <legend><b>3</b> The feel</legend>
+            <p class="fs__q">Pick the vibe <em>(any that fit)</em></p>
+            <div class="chips chips--multi" data-group="vibe">
+              <label class="chip"><input type="checkbox" name="vibe" value="Elegant / editorial" /><span>Elegant / editorial</span></label>
+              <label class="chip"><input type="checkbox" name="vibe" value="Minimal / clean" /><span>Minimal / clean</span></label>
+              <label class="chip"><input type="checkbox" name="vibe" value="Bold / modern" /><span>Bold / modern</span></label>
+              <label class="chip"><input type="checkbox" name="vibe" value="Warm / romantic" /><span>Warm / romantic</span></label>
+              <label class="chip"><input type="checkbox" name="vibe" value="Luxe / premium" /><span>Luxe / premium</span></label>
+              <label class="chip"><input type="checkbox" name="vibe" value="Playful / creative" /><span>Playful / creative</span></label>
+              <label class="chip"><input type="checkbox" name="vibe" value="Techy / futuristic" /><span>Techy / futuristic</span></label>
+            </div>
+            <label class="field"><span>Colours you love (optional)</span><input type="text" name="colours" placeholder="e.g. deep green, cream, brushed gold" /></label>
+            <label class="field"><span>Sites or brands you admire (optional)</span><textarea name="admire" rows="2" placeholder="Paste links or names — anything that captures the look you want."></textarea></label>
+            <p class="fs__q">Do you have brand assets?</p>
+            <div class="chips" data-group="assets">
+              <label class="chip"><input type="radio" name="assets" value="Logo + brand ready" checked /><span>Logo &amp; brand ready</span></label>
+              <label class="chip"><input type="radio" name="assets" value="Logo only" /><span>Logo only</span></label>
+              <label class="chip"><input type="radio" name="assets" value="Nothing yet" /><span>Nothing yet</span></label>
+            </div>
+            <label class="field"><span>Your vision — tell us anything (optional)</span><textarea name="vision" rows="3" placeholder="What's the site for? Who's it for? What should people feel?"></textarea></label>
+          </fieldset>
+
+          <!-- 4. Budget -->
+          <fieldset class="fs" data-reveal>
+            <legend><b>4</b> Budget comfort</legend>
+            <p class="fs__q">What range feels right? <em>(so we can tailor scope)</em></p>
+            <div class="chips" data-group="budget">
+              <label class="chip"><input type="radio" name="budget" value="Under $500" /><span>Under $500</span></label>
+              <label class="chip"><input type="radio" name="budget" value="$500 – $1,000" checked /><span>$500 – $1,000</span></label>
+              <label class="chip"><input type="radio" name="budget" value="$1,000 – $2,500" /><span>$1,000 – $2,500</span></label>
+              <label class="chip"><input type="radio" name="budget" value="$2,500+" /><span>$2,500+</span></label>
+              <label class="chip"><input type="radio" name="budget" value="Not sure yet" /><span>Not sure yet</span></label>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- Estimate rail -->
+        <aside class="estimate" aria-label="Live estimate">
+          <div class="estimate__card" data-reveal>
+            <p class="estimate__label">Your ballpark</p>
+            <p class="estimate__range" id="est-range">$270 – $345</p>
+            <p class="estimate__monthly" id="est-monthly" hidden></p>
+            <ul class="estimate__items" id="est-items"></ul>
+            <p class="estimate__disclaimer">An estimate for budgeting only — your final fixed quote comes after a quick chat. Payment is arranged directly with the studio, never on this site.</p>
+            <button type="submit" class="btn btn--block">Send my brief →</button>
+            <button type="button" class="btn btn--ghost btn--block" id="copyBrief">Copy brief instead</button>
+            <p class="cform__note" id="brief-note" role="status" aria-live="polite"></p>
+          </div>
+        </aside>
+      </form>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <span class="brand"><span class="brand__mark" aria-hidden="true">M</span><span class="brand__name">Marque<span class="brand__thin"> Studio</span></span></span>
+      <p class="foot__tag">Taste · Technology · Convenience</p>
+      <p class="foot__copy">© <span id="year"></span> Marque Studio. Make your mark.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="intake.js"></script>
+</body>
+</html>
