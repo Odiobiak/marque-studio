@@ -167,6 +167,20 @@ img{ max-width:100%; display:block; }
 .cover--cream .cover__crest{ font-size:clamp(3rem,8vw,5rem); color:#7a6236; }
 .cover--cream .cover__crest em{ font-style:italic; color:var(--brass); }
 .cover--cream .cover__hash{ font-family:var(--sans); font-size:.78rem; letter-spacing:.2em; text-transform:uppercase; color:#9a824f; }
+/* momentum cover */
+.cover--momentum{ background:radial-gradient(120% 120% at 25% 15%, #1a1a1b 0%, #0B0B0C 60%); color:#F2F0EA; }
+.cover--momentum .cover__momentum-word{ font-family:'Arial Black',Impact,sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(1.8rem,5.5vw,3.1rem); letter-spacing:-.01em; }
+.cover--momentum .cover__momentum-word em{ font-style:normal; color:#CDFF4D; }
+.cover--momentum .cover__momentum-meta{ font-family:var(--sans); font-size:.75rem; letter-spacing:.14em; color:#CDFF4D; margin-top:.4rem; }
+/* ember cover */
+.cover--ember{ background:linear-gradient(160deg,#F6EFE3 0%,#EFE5D3 100%); color:#24201B; }
+.cover--ember .cover__ember-word{ font-family:'Georgia','Times New Roman',serif; font-weight:600; font-size:clamp(2.2rem,6vw,3.4rem); letter-spacing:-.01em; }
+.cover--ember .cover__ember-word em{ font-style:italic; color:#B5502F; font-weight:400; }
+.cover--ember .cover__ember-meta{ font-family:var(--sans); font-size:.76rem; letter-spacing:.12em; text-transform:uppercase; color:#B5502F; margin-top:.5rem; }
+/* amara cover */
+.cover--amara{ background:#FFFFFF; color:#0A0A0A; border-bottom:1px solid #eee; }
+.cover--amara .cover__amara-word{ font-family:Georgia,'Times New Roman',serif; font-style:italic; font-weight:300; font-size:clamp(2rem,5.5vw,3.2rem); letter-spacing:.01em; }
+.cover--amara .cover__amara-meta{ font-family:var(--sans); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:#8a8a8a; margin-top:.5rem; }
 /* empty / cta cover */
 .cover--empty{ background:repeating-linear-gradient(135deg,var(--card),var(--card) 12px,color-mix(in srgb,var(--ink) 3%,var(--card)) 12px,color-mix(in srgb,var(--ink) 3%,var(--card)) 24px); color:var(--ink-2); }
 .cover--empty .cover__plus{ font-size:3.5rem; color:var(--brass); font-weight:300; }
