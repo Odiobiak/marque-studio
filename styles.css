@@ -5,9 +5,9 @@
    ============================================================ */
 
 :root{
-  --bone:#F4F4F3;
-  --bone-2:#EAEAE8;
-  --card:#FFFFFF;
+  --bone:#E9EAE7;
+  --bone-2:#DEDFDB;
+  --card:#F4F4F2;
   --ink:#141414;
   --ink-2:#5b584f;
   --ink-3:#8a877d;
@@ -134,13 +134,9 @@ img{ max-width:100%; display:block; }
 /* ---------- Scene gallery (work page) ---------- */
 .gallery{ display:flex; flex-direction:column; gap:clamp(3.5rem,7vw,6rem); }
 .scene{ display:flex; flex-direction:column; gap:1.6rem; }
-.scene__stage{
-  position:relative; border-radius:4px; overflow:visible; border:1px solid var(--line);
-  padding:clamp(1.5rem,4vw,3.5rem) clamp(1rem,4vw,3.5rem) 0;
-  display:flex; justify-content:center; align-items:flex-end;
-  min-height:clamp(320px,42vw,540px);
-}
-.scene__device{ width:100%; max-width:840px; margin:0 auto; border-radius:8px 8px 0 0; overflow:hidden; box-shadow:0 -10px 60px -30px rgba(0,0,0,.5), 0 30px 60px -35px rgba(0,0,0,.55); }
+.scene__device{ width:100%; border:1px solid var(--line); border-radius:6px; overflow:hidden; background:var(--card); box-shadow:0 30px 60px -42px rgba(0,0,0,.45); }
+.scene .case__stage{ aspect-ratio:16/9; }
+.scene .case__stage[data-loaded]{ height:min(78vh,760px); }
 .scene__caption{ display:flex; justify-content:space-between; align-items:flex-start; gap:1.5rem; flex-wrap:wrap; }
 .scene__no{ font-family:var(--serif); font-style:italic; font-size:1rem; color:var(--oxblood); }
 .scene__caption h3{ font-family:var(--sans); font-weight:500; font-size:clamp(1.5rem,3vw,2.1rem); letter-spacing:-.02em; margin:.4rem 0 .5rem; }
@@ -148,14 +144,7 @@ img{ max-width:100%; display:block; }
 .scene__side{ display:flex; flex-direction:column; align-items:flex-end; gap:.55rem; text-align:right; flex:none; }
 .scene__side .tag{ white-space:nowrap; }
 
-/* scene backdrops (no photos needed) */
-.bg--sage{ background:linear-gradient(150deg,#3c4a3a 0%,#26301f 100%); }
-.bg--dusk{ background:linear-gradient(150deg,#3a2f3f 0%,#241a2b 100%); }
-.bg--sand{ background:linear-gradient(150deg,#b79b74 0%,#8a6f4c 100%); }
-.bg--slate{ background:linear-gradient(150deg,#39424c 0%,#232a31 100%); }
-.bg--rose{ background:linear-gradient(150deg,#7a3f3f 0%,#4d2626 100%); }
-.bg--noise::after{ content:""; position:absolute; inset:0; opacity:.5; pointer-events:none;
-  background:radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,.08), transparent 60%); }
+/* (scene colour backdrops removed: previews now fill the full card width) */
 
 /* ---------- Reused preview frame (cover + click-to-load iframe) ---------- */
 .case__frame{ background:var(--card); overflow:hidden; }
@@ -238,6 +227,9 @@ img{ max-width:100%; display:block; }
 .tier__list{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:.4rem .5rem; }
 .tier__list li{ font-size:.8rem; color:var(--ink-2); border:1px solid var(--line-2); border-radius:2px; padding:.3em .7em; background:var(--bone); }
 .cat__note{ font-size:.85rem; color:var(--ink-3); margin:.8rem 0 0; }
+.cat__flag{ border-left:2px solid var(--oxblood); padding:.2rem 0 .2rem .9rem; margin:1.2rem 0 0; font-size:.92rem; color:var(--ink-2); }
+.cat__flag b{ color:var(--ink); font-weight:600; }
+.cat__flag .serif{ color:var(--oxblood); }
 
 /* ---------- Intelligence (dark) ---------- */
 .intel{ background:var(--ink); color:var(--bone); padding:clamp(4rem,9vw,7.5rem) 0; overflow:hidden; }
