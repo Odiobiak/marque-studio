@@ -301,7 +301,12 @@ a.mini:hover .mini__cta{ gap:.6em; }
 .feature__cta .serif{ color:#f4a687; }
 
 /* ---------- Testimonials ---------- */
-.testimonials{ display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(1.5rem,3vw,2.5rem); }
+.testimonials{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:clamp(1.5rem,3vw,2.5rem); }
+.testimony--founder{ border-color:var(--ink); background:var(--ink); color:var(--bone); }
+.testimony--founder .testimony__mark{ color:#f4a687; }
+.testimony--founder .testimony__quote{ color:var(--bone); }
+.testimony--founder .testimony__who{ border-top-color:rgba(242,241,236,.16); }
+.testimony--founder .testimony__project{ color:#f4a687; }
 .testimony{
   background:var(--card); border:1px solid var(--line); border-radius:8px;
   padding:clamp(1.75rem,3vw,2.5rem); display:flex; flex-direction:column; gap:1.25rem;
