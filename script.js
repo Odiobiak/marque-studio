@@ -78,11 +78,18 @@
         if (note) { note.textContent = 'Please add your name, email, and a message.'; note.className = 'cform__note is-err'; }
         return;
       }
-      var subject = 'New enquiry — ' + name;
-      var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + msg;
+      var typeEl = cform.querySelector('[name="type"]');
+      var budgetEl = cform.querySelector('[name="budget"]');
+      var type = typeEl ? typeEl.value.trim() : '';
+      var budget = budgetEl ? budgetEl.value.trim() : '';
+      var subject = 'New enquiry from ' + name;
+      var body = 'Name: ' + name + '\nEmail: ' + email;
+      if (type) body += '\nProject: ' + type;
+      if (budget) body += '\nBudget: ' + budget;
+      body += '\n\n' + msg;
       window.location.href = 'mailto:odicheobiakarije@gmail.com?subject=' +
         encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      if (note) { note.textContent = 'Opening your email app… if nothing happens, email hello@marquestudio directly.'; note.className = 'cform__note is-ok'; }
+      if (note) { note.textContent = 'Opening your email app. If nothing happens, email hello@marquestudio directly.'; note.className = 'cform__note is-ok'; }
     });
   }
 })();

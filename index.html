@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Marque Studio — Websites that help you make your mark</title>
-  <meta name="description" content="Marque Studio is a small design studio making beautiful, bespoke websites for creatives, personal brands, and events — designed with real taste and handled end to end." />
+  <title>Marque Studio · Beautiful websites for people making their mark</title>
+  <meta name="description" content="Marque Studio is a small design studio making beautiful, bespoke websites for portfolios, personal brands, weddings, and events. Designed with care and handled end to end." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Marque Studio — Make your mark" />
-  <meta property="og:description" content="A design studio for beautiful, bespoke websites — portfolios, personal brands, and events. Designed with taste. Handled end to end." />
+  <meta property="og:title" content="Marque Studio · Make your mark" />
+  <meta property="og:description" content="A small studio making beautiful, bespoke websites for portfolios, personal brands, weddings, and events." />
   <meta property="og:site_name" content="Marque Studio" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,16 +23,16 @@
   <!-- ===== NAV ===== -->
   <header class="nav" id="nav">
     <div class="wrap nav__inner">
-      <a class="brand" href="#top" aria-label="Marque Studio home">
+      <a class="brand" href="index.html" aria-label="Marque Studio home">
         <span class="brand__mark" aria-hidden="true">M</span>
         <span class="brand__name">Marque<span class="brand__thin"> Studio</span></span>
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#approach">Approach</a>
-        <a href="#intelligence">Intelligence</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <a href="start.html" class="btn btn--sm">Start a project</a>
     </div>
@@ -43,312 +43,131 @@
     <!-- ===== HERO ===== -->
     <section class="hero">
       <div class="wrap">
-        <p class="eyebrow" data-reveal>— A small studio, obsessed with the details</p>
-        <h1 class="hero__title" data-reveal>
-          We help you<br />make your <em>mark.</em>
-        </h1>
+        <p class="eyebrow" data-reveal>A small studio for beautiful websites</p>
+        <h1 class="hero__title" data-reveal>We help you make your <span class="serif">mark.</span></h1>
         <p class="hero__lede" data-reveal>
-          Beautiful, bespoke websites for creatives, personal brands, and once-in-a-lifetime
-          events — designed with real taste and handled end to end, so you don't have to lift a finger.
+          Bespoke websites for portfolios, personal brands, weddings, and events. We design
+          the whole thing by hand, put it live on your own domain, and look after it, so you
+          get something genuinely yours without the headache.
         </p>
         <div class="hero__cta" data-reveal>
           <a href="start.html" class="btn">Start a project</a>
-          <a href="#work" class="btn btn--ghost">See the work ↓</a>
+          <a href="work.html" class="btn btn--ghost">See our work</a>
         </div>
         <div class="hero__meta" data-reveal>
-          <span>Portfolios</span><i>·</i><span>Personal brands</span><i>·</i><span>Events &amp; weddings</span>
+          <span>Portfolios</span><i>·</i><span>Personal brands</span><i>·</i><span>Weddings</span><i>·</i><span>Events</span>
         </div>
       </div>
     </section>
 
-    <!-- ===== MARQUEE ===== -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Make your mark</span><i>✦</i><span>Taste</span><i>✦</i><span>Craft</span><i>✦</i><span>Care</span><i>✦</i>
-        <span>Make your mark</span><i>✦</i><span>Taste</span><i>✦</i><span>Craft</span><i>✦</i><span>Care</span><i>✦</i>
+    <!-- ===== CAPABILITY STRIP ===== -->
+    <div class="strip">
+      <div class="wrap strip__inner">
+        <span>Custom design</span><i>✦</i><span>Your own domain</span><i>✦</i><span>Built &amp; launched for you</span><i>✦</i><span>Looked after</span>
       </div>
     </div>
 
-    <!-- ===== WORK ===== -->
+    <!-- ===== FEATURED WORK ===== -->
     <section class="section" id="work">
       <div class="wrap">
         <div class="section__head" data-reveal>
-          <p class="label">01 — Selected work</p>
-          <h2 class="section__title">A few things we've made.</h2>
-          <p class="section__sub">Client work and studio concepts, side by side — tap a card to load a live, scrollable version of the real site.</p>
+          <p class="label">Selected work</p>
+          <h2 class="section__title">A few things we've <span class="serif">made.</span></h2>
+          <p class="section__sub">A mix of client projects and studio concepts. See the full set, with live scrollable previews, on the work page.</p>
         </div>
 
-        <div class="work">
-          <!-- Project 1 -->
-          <article class="case" data-reveal>
-            <div class="case__frame">
-              <div class="case__chrome"><i></i><i></i><i></i><span>Live preview</span>
-                <button type="button" class="case__reset" hidden>↺ Close</button>
-              </div>
-              <div class="case__stage" data-embed="https://odiobiak.github.io/website-me/">
-                <div class="case__cover cover--ink">
-                  <span class="cover__mono">OO</span>
-                  <span class="cover__terminal">odi:~/portfolio $</span>
-                  <button type="button" class="case__play">▸ Scrollable preview</button>
-                </div>
-              </div>
-            </div>
-            <div class="case__meta">
-              <div><h3>Editorial Portfolio</h3><p>A refined portfolio for a data &amp; AI engineer — quiet luxury, with a live assistant tucked inside.</p></div>
-              <div class="case__side">
-                <span class="tag">Portfolio</span>
-                <a class="case__link" href="https://odiobiak.github.io/website-me/" target="_blank" rel="noopener">Visit live ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="case" data-reveal>
-            <div class="case__frame">
-              <div class="case__chrome"><i></i><i></i><i></i><span>Live preview</span>
-                <button type="button" class="case__reset" hidden>↺ Close</button>
-              </div>
-              <div class="case__stage" data-embed="https://odiobiak.github.io/Freke-profile/">
-                <div class="case__cover cover--blue">
-                  <span class="cover__glyph">[ S # N&gt;</span>
-                  <span class="cover__toggle"><b>TECH</b> / CREATIVE</span>
-                  <button type="button" class="case__play">▸ Scrollable preview</button>
-                </div>
-              </div>
-            </div>
-            <div class="case__meta">
-              <div><h3>Dual-Mode Personal Brand</h3><p>One profile, two personalities — it flips between a tech and a creative identity at the tap of a switch.</p></div>
-              <div class="case__side">
-                <span class="tag">Personal brand</span>
-                <a class="case__link" href="https://odiobiak.github.io/Freke-profile/" target="_blank" rel="noopener">Visit live ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3 — visible preview, link kept private -->
-          <article class="case" data-reveal>
-            <div class="case__frame">
-              <div class="case__chrome"><i></i><i></i><i></i><span>Live preview</span>
-                <button type="button" class="case__reset" hidden>↺ Close</button>
-              </div>
-              <div class="case__stage" data-embed="https://mosope-emmanuel.lovable.app/" data-mask="1">
-                <div class="case__cover cover--cream">
-                  <span class="cover__crest">M<em>&amp;</em>E</span>
-                  <span class="cover__hash">#MEAnToBe</span>
-                  <button type="button" class="case__play">▸ Scrollable preview</button>
-                </div>
-              </div>
-            </div>
-            <div class="case__meta">
-              <div><h3>Destination Wedding</h3><p>A multi-city celebration across Seville &amp; Lagos, with RSVP and registry. Shown here privately, out of respect for the couple.</p></div>
-              <div class="case__side">
-                <span class="tag">Wedding · Events</span>
-                <span class="case__private">Link kept private</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Concept 4 — MOMENTUM festival -->
-          <article class="case" data-reveal>
-            <div class="case__frame">
-              <div class="case__chrome"><i></i><i></i><i></i><span>Live preview</span>
-                <button type="button" class="case__reset" hidden>↺ Close</button>
-              </div>
-              <div class="case__stage" data-embed="https://odiobiak.github.io/momentum-festival/">
-                <div class="case__cover cover--momentum">
-                  <span class="cover__momentum-word">MOMENT<em>UM</em></span>
-                  <span class="cover__momentum-meta">17–18 OCT · LISBON</span>
-                  <button type="button" class="case__play">▸ Scrollable preview</button>
-                </div>
-              </div>
-            </div>
-            <div class="case__meta">
-              <div><h3>Festival &amp; Event</h3><p>A bold, kinetic site for a two-day creative festival — big type, a tabbed schedule, ticketing built in.</p></div>
-              <div class="case__side">
-                <span class="tag">Concept · Events</span>
-                <a class="case__link" href="https://odiobiak.github.io/momentum-festival/" target="_blank" rel="noopener">Visit live ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Concept 5 — Ember & Rye restaurant -->
-          <article class="case" data-reveal>
-            <div class="case__frame">
-              <div class="case__chrome"><i></i><i></i><i></i><span>Live preview</span>
-                <button type="button" class="case__reset" hidden>↺ Close</button>
-              </div>
-              <div class="case__stage" data-embed="https://odiobiak.github.io/ember-and-rye/">
-                <div class="case__cover cover--ember">
-                  <span class="cover__ember-word">Ember <em>&amp;</em> Rye</span>
-                  <span class="cover__ember-meta">Fire-cooked · Seasonal</span>
-                  <button type="button" class="case__play">▸ Scrollable preview</button>
-                </div>
-              </div>
-            </div>
-            <div class="case__meta">
-              <div><h3>Restaurant &amp; Wine Bar</h3><p>A warm, tactile site built like a printed menu — weekly-changing dishes, booking, and a private-events room.</p></div>
-              <div class="case__side">
-                <span class="tag">Concept · Hospitality</span>
-                <a class="case__link" href="https://odiobiak.github.io/ember-and-rye/" target="_blank" rel="noopener">Visit live ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Concept 6 — Amara Cole photographer -->
-          <article class="case" data-reveal>
-            <div class="case__frame">
-              <div class="case__chrome"><i></i><i></i><i></i><span>Live preview</span>
-                <button type="button" class="case__reset" hidden>↺ Close</button>
-              </div>
-              <div class="case__stage" data-embed="https://odiobiak.github.io/amara-cole/">
-                <div class="case__cover cover--amara">
-                  <span class="cover__amara-word">Amara Cole</span>
-                  <span class="cover__amara-meta">Portrait · Editorial</span>
-                  <button type="button" class="case__play">▸ Scrollable preview</button>
-                </div>
-              </div>
-            </div>
-            <div class="case__meta">
-              <div><h3>Photographer Portfolio</h3><p>An ultra-minimal, image-first site — broken-grid galleries and a lightbox, nothing between you and the work.</p></div>
-              <div class="case__side">
-                <span class="tag">Concept · Portfolio</span>
-                <a class="case__link" href="https://odiobiak.github.io/amara-cole/" target="_blank" rel="noopener">Visit live ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Your project -->
-          <a class="case case--cta" href="start.html" data-reveal>
-            <div class="case__frame">
-              <div class="case__chrome"><i></i><i></i><i></i><span>yours</span></div>
-              <div class="case__stage">
-                <div class="case__cover cover--empty">
-                  <span class="cover__plus">+</span>
-                  <span class="cover__next">Your brand, next</span>
-                </div>
-              </div>
-            </div>
-            <div class="case__meta">
-              <div><h3>Have something in mind?</h3><p>Tell us about your project and we'll design the site it deserves.</p></div>
-              <span class="case__go">Start a project →</span>
-            </div>
+        <div class="feat">
+          <a class="mini" href="work.html" data-reveal>
+            <div class="mini__cover cover--cream"><span class="cover__crest">M<em>&amp;</em>E</span></div>
+            <span class="mini__tag">Wedding</span>
+            <div><h3>Destination Wedding</h3><p>A two-city celebration with RSVP and registry.</p></div>
+          </a>
+          <a class="mini" href="work.html" data-reveal>
+            <div class="mini__cover cover--ink"><span class="cover__mono">OO</span></div>
+            <span class="mini__tag">Portfolio</span>
+            <div><h3>Editorial Portfolio</h3><p>Quiet luxury for a data and AI engineer.</p></div>
+          </a>
+          <a class="mini" href="work.html" data-reveal>
+            <div class="mini__cover cover--plum"><span class="cover__glyph">MMTM</span></div>
+            <span class="mini__tag">Event</span>
+            <div><h3>Festival Concept</h3><p>A bold, kinetic site for a music weekender.</p></div>
           </a>
         </div>
+        <p class="plans__note" data-reveal><a href="work.html" class="ilink">View all work →</a></p>
       </div>
     </section>
 
-    <!-- ===== APPROACH / PILLARS ===== -->
-    <section class="section section--tint" id="approach">
+    <!-- ===== SERVICES OVERVIEW ===== -->
+    <section class="section section--tint" id="services">
       <div class="wrap">
         <div class="section__head" data-reveal>
-          <p class="label">02 — How we work</p>
-          <h2 class="section__title">Three things, done properly.</h2>
+          <p class="label">What we make</p>
+          <h2 class="section__title">One studio, three <span class="serif">specialities.</span></h2>
+          <p class="section__sub">Fixed scope, fixed price, and your first year of domain and hosting included in every project. Full details and tiers live on the services page.</p>
         </div>
-        <div class="pillars">
-          <div class="pillar" data-reveal>
-            <span class="pillar__no">i</span>
-            <h3>Taste</h3>
-            <p>Anyone can put a site online. We make one that looks considered — the typography, the spacing, the small moments most people never notice but everyone feels. Your site should look as good as your work is.</p>
+
+        <div class="feat">
+          <div class="mini" data-reveal>
+            <div class="mini__cover cover--ink" style="aspect-ratio:16/10"><span class="serif" style="font-size:1.6rem;color:#e7e3da">Personal &amp; Portfolio</span></div>
+            <div><h3>From $450</h3><p>Portfolios and personal brands for creatives and professionals who need to look the part.</p></div>
           </div>
-          <div class="pillar" data-reveal>
-            <span class="pillar__no">ii</span>
-            <h3>Craft</h3>
-            <p>Every project is built by hand to fit you — custom layouts, thoughtful motion, and the odd clever detail. Nothing off a shelf, nothing that looks like everybody else's.</p>
+          <div class="mini" data-reveal>
+            <div class="mini__cover cover--cream" style="aspect-ratio:16/10"><span class="serif" style="font-size:1.6rem;color:#6e5a38">Weddings</span></div>
+            <div><h3>From $650</h3><p>Elegant wedding sites with your story, the details, RSVP, and registry.</p></div>
           </div>
-          <div class="pillar" data-reveal>
-            <span class="pillar__no">iii</span>
-            <h3>Care</h3>
-            <p>You stay in your lane; we handle the rest — design, build, domain, and launch. Start to live in days, not months, and looked after long after.</p>
+          <div class="mini" data-reveal>
+            <div class="mini__cover cover--plum" style="aspect-ratio:16/10"><span class="serif" style="font-size:1.6rem;color:#d9b8c8">Events</span></div>
+            <div><h3>From $850</h3><p>Launches, conferences, and celebrations that need a home online, fast.</p></div>
           </div>
         </div>
+        <p class="plans__note" data-reveal><a href="services.html" class="ilink">See full services and pricing →</a></p>
       </div>
     </section>
 
-    <!-- ===== SERVICES ===== -->
-    <section class="section" id="services">
+    <!-- ===== HOW WE WORK ===== -->
+    <section class="section" id="process">
       <div class="wrap">
         <div class="section__head" data-reveal>
-          <p class="label">03 — Services</p>
-          <h2 class="section__title">Pick a lane. Or go bespoke.</h2>
-          <p class="section__sub">Fixed scope, fixed price. Every project includes responsive design, domain setup, and launch. Not sure where you land? <a href="start.html" class="ilink">Get an instant estimate →</a></p>
+          <p class="label">How we work</p>
+          <h2 class="section__title">Simple, and kept that <span class="serif">way.</span></h2>
+          <p class="section__sub">Four steps from first hello to live site. You stay in your lane, we handle the rest.</p>
         </div>
-
-        <div class="plans">
-          <div class="plan" data-reveal>
-            <p class="plan__name">Essential</p>
-            <p class="plan__price"><span>from</span> $300</p>
-            <p class="plan__for">A single, striking page.</p>
-            <ul>
-              <li>One-page site, fully responsive</li>
-              <li>Custom design in your identity</li>
-              <li>Contact form &amp; socials</li>
-              <li>Domain &amp; launch</li>
-              <li>1 revision round</li>
-            </ul>
-            <a href="start.html" class="btn btn--ghost btn--block">Start a project</a>
-          </div>
-
-          <div class="plan plan--feature" data-reveal>
-            <span class="plan__flag">Most popular</span>
-            <p class="plan__name">Signature</p>
-            <p class="plan__price"><span>from</span> $800</p>
-            <p class="plan__for">A proper multi-page presence.</p>
-            <ul>
-              <li>3–5 custom pages</li>
-              <li>Motion &amp; interactions</li>
-              <li>Gallery / portfolio layouts</li>
-              <li>Domain, email &amp; launch</li>
-              <li>2 revision rounds</li>
-            </ul>
-            <a href="start.html" class="btn btn--block">Start a project</a>
-          </div>
-
-          <div class="plan" data-reveal>
-            <p class="plan__name">Bespoke</p>
-            <p class="plan__price"><span>from</span> $1,500</p>
-            <p class="plan__for">Events, weddings &amp; the ambitious.</p>
-            <ul>
-              <li>Fully custom, unlimited scope</li>
-              <li>RSVP, registry, multi-section</li>
-              <li>Signature animations</li>
-              <li>Priority delivery</li>
-              <li>3 revision rounds</li>
-            </ul>
-            <a href="start.html" class="btn btn--ghost btn--block">Start a project</a>
-          </div>
-        </div>
-        <p class="plans__note" data-reveal>Care &amp; hosting plans from <b>$35/mo</b> keep your site fast, updated, and looked-after. Payment is arranged directly — never through the site.</p>
+        <ol class="steps">
+          <li data-reveal><span>i</span><h3>Brief</h3><p>Tell us about your project and taste. You get an instant estimate, then a fixed quote.</p></li>
+          <li data-reveal><span>ii</span><h3>Design</h3><p>We design the direction and share a live preview. You react, we refine.</p></li>
+          <li data-reveal><span>iii</span><h3>Build</h3><p>We build it out, considered and fast, usually in days rather than months.</p></li>
+          <li data-reveal><span>iv</span><h3>Launch</h3><p>We connect your domain, test everything, and put it live. Then we look after it.</p></li>
+        </ol>
       </div>
     </section>
 
-    <!-- ===== INTELLIGENCE (premium AI) ===== -->
+    <!-- ===== INTELLIGENCE ===== -->
     <section class="intel" id="intelligence">
       <div class="wrap intel__inner">
         <div class="intel__copy" data-reveal>
-          <p class="label label--light">04 — Marque Intelligence</p>
-          <h2 class="intel__title">A website that answers back.</h2>
+          <p class="label label--light">Marque Intelligence</p>
+          <h2 class="intel__title">A website that <span class="serif">answers back.</span></h2>
           <p class="intel__lede">
-            Our signature commission: a private AI concierge, trained on <em>your</em> world —
-            your work, your services, your story. It greets your visitors in your voice,
-            answers their questions, and quietly turns curiosity into enquiries while you sleep.
+            Our special commission. A private assistant, trained on <em>your</em> world, that
+            greets your visitors, answers their questions in your voice, and quietly turns
+            interest into enquiries while you get on with your day.
           </p>
           <ul class="intel__list">
-            <li>Bespoke, trained on your own material</li>
-            <li>Answers, qualifies &amp; captures genuine leads</li>
-            <li>On-brand, guard-railed, always composed</li>
+            <li>Built and trained on your own material</li>
+            <li>Answers, qualifies, and captures real leads</li>
+            <li>On brand, well mannered, always composed</li>
           </ul>
-          <p class="intel__price">A rare, hand-built commission — <b>from $3,500</b> + concierge from <b>$150/mo</b></p>
-          <a href="start.html" class="btn btn--light">Enquire about Intelligence</a>
+          <p class="intel__price">A rare, hand-built commission, <b>from $3,500</b> plus care from <b>$150/mo</b></p>
+          <a href="contact.html" class="btn btn--light">Enquire about Intelligence</a>
         </div>
-
         <div class="intel__demo" data-reveal aria-hidden="true">
           <div class="chat">
-            <div class="chat__head"><span class="chat__dot"></span> Concierge · online</div>
+            <div class="chat__head"><span class="chat__dot"></span> Concierge, online</div>
             <div class="chat__body">
               <div class="bubble bubble--in">Do you take commissions for August?</div>
-              <div class="bubble bubble--out">We do — August has two slots open. Want me to hold one and share pricing?</div>
+              <div class="bubble bubble--out">We do. August has two slots open. Want me to hold one and share pricing?</div>
               <div class="bubble bubble--in">Yes please.</div>
-              <div class="bubble bubble--out">Wonderful. What's the best email to send the details to?</div>
+              <div class="bubble bubble--out">Wonderful. What is the best email to send the details to?</div>
             </div>
             <div class="chat__bar"><span>Ask anything…</span></div>
           </div>
@@ -356,49 +175,45 @@
       </div>
     </section>
 
-    <!-- ===== PROCESS ===== -->
-    <section class="section" id="process">
-      <div class="wrap">
-        <div class="section__head" data-reveal>
-          <p class="label">05 — How it works</p>
-          <h2 class="section__title">Simple, by design.</h2>
-        </div>
-        <ol class="steps">
-          <li data-reveal><span>01</span><h3>Brief</h3><p>Share your project and vision. Get an instant estimate for budgeting, then a fixed quote.</p></li>
-          <li data-reveal><span>02</span><h3>Design</h3><p>We design the direction and share a live preview. You react; we refine.</p></li>
-          <li data-reveal><span>03</span><h3>Build</h3><p>We build it out — considered, fast, and detailed — in days, not months.</p></li>
-          <li data-reveal><span>04</span><h3>Launch</h3><p>Domain connected, everything tested, you go live. Then we look after it.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section class="contact" id="contact">
+    <!-- ===== CONTACT CTA ===== -->
+    <section class="contact">
       <div class="wrap contact__inner" data-reveal>
-        <p class="label">06 — Get in touch</p>
-        <h2 class="contact__title">Let's make your mark.</h2>
-        <p class="contact__sub">A quick question or a big idea — either way, a real person replies within a day. Ready with details? <a href="start.html" class="ilink">Start a full project brief →</a></p>
-
-        <form class="cform" id="cform" novalidate>
-          <div class="cform__row">
-            <label class="field"><span>Name</span><input type="text" name="name" autocomplete="name" required /></label>
-            <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" required /></label>
-          </div>
-          <label class="field"><span>Message</span><textarea name="message" rows="4" required placeholder="Tell us a little about what you're after…"></textarea></label>
-          <button type="submit" class="btn btn--lg">Send message</button>
-          <p class="cform__note" id="cform-note" role="status" aria-live="polite"></p>
-        </form>
-        <p class="contact__or">or email us at <a class="ilink" href="mailto:odicheobiakarije@gmail.com">hello@marquestudio</a></p>
+        <p class="label">Get in touch</p>
+        <h2 class="contact__title">Let's make your <span class="serif">mark.</span></h2>
+        <p class="contact__sub">Have a project in mind, or just a question? A real person replies within a day.</p>
+        <div class="hero__cta" style="justify-content:center">
+          <a href="start.html" class="btn">Start a project</a>
+          <a href="contact.html" class="btn btn--ghost">Contact us</a>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="foot">
-    <div class="wrap foot__inner">
-      <span class="brand"><span class="brand__mark" aria-hidden="true">M</span><span class="brand__name">Marque<span class="brand__thin"> Studio</span></span></span>
-      <p class="foot__tag">Made by hand, with care.</p>
-      <p class="foot__copy">© <span id="year"></span> Marque Studio. Make your mark.</p>
+    <div class="wrap">
+      <div class="foot__top">
+        <div>
+          <span class="brand"><span class="brand__mark" aria-hidden="true">M</span><span class="brand__name">Marque<span class="brand__thin"> Studio</span></span></span>
+          <p class="foot__blurb">Beautiful, bespoke websites for portfolios, personal brands, weddings, and events. Made by hand, with care.</p>
+        </div>
+        <div class="foot__col">
+          <h4>Studio</h4>
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="start.html">Start a project</a>
+        </div>
+        <div class="foot__col">
+          <h4>Get in touch</h4>
+          <a href="contact.html">Contact</a>
+          <a href="mailto:odicheobiakarije@gmail.com">hello@marquestudio</a>
+        </div>
+      </div>
+      <div class="foot__bottom">
+        <span>© <span id="year"></span> Marque Studio</span>
+        <span>Make your mark.</span>
+      </div>
     </div>
   </footer>
 

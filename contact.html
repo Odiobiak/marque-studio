@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact · Marque Studio</title>
+  <meta name="description" content="Get in touch with Marque Studio. Tell us about your project and we reply within a day." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="index.html" aria-label="Marque Studio home">
+        <span class="brand__mark" aria-hidden="true">M</span>
+        <span class="brand__name">Marque<span class="brand__thin"> Studio</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a href="start.html" class="btn btn--sm">Start a project</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section">
+      <div class="wrap">
+        <div class="contactp">
+
+          <div class="contactp__aside" data-reveal>
+            <p class="label">Get in touch</p>
+            <h1>Tell us what you're <span class="serif">building.</span></h1>
+            <p>A quick question or a full project, either is welcome. We read every message and reply within a day, as a real person, never a bot.</p>
+            <p>Want an instant ballpark price first? <a href="start.html" class="ilink">Start a project brief →</a></p>
+
+            <div class="contactp__detail">
+              <span><b>Email</b>  hello@marquestudio</span>
+              <span><b>Reply time</b>  Within one business day</span>
+              <span><b>Where</b>  Online, working with people anywhere</span>
+              <span><b>Payment</b>  Arranged directly, never on this site</span>
+            </div>
+          </div>
+
+          <form class="cform cform--card" id="cform" novalidate data-reveal>
+            <div class="cform__row">
+              <label class="field"><span>Name *</span><input type="text" name="name" autocomplete="name" required /></label>
+              <label class="field"><span>Email *</span><input type="email" name="email" autocomplete="email" required /></label>
+            </div>
+            <div class="cform__row">
+              <label class="field"><span>Project type</span>
+                <select name="type">
+                  <option value="">Choose one…</option>
+                  <option>Portfolio / Personal brand</option>
+                  <option>Wedding</option>
+                  <option>Event</option>
+                  <option>Marque Intelligence</option>
+                  <option>Something else</option>
+                </select>
+              </label>
+              <label class="field"><span>Budget</span>
+                <select name="budget">
+                  <option value="">Choose one…</option>
+                  <option>Under $500</option>
+                  <option>$500 to $1,000</option>
+                  <option>$1,000 to $2,500</option>
+                  <option>$2,500+</option>
+                  <option>Not sure yet</option>
+                </select>
+              </label>
+            </div>
+            <label class="field"><span>Message *</span><textarea name="message" rows="5" required placeholder="Tell us a little about your project, your timeline, and the feeling you're after."></textarea></label>
+            <button type="submit" class="btn btn--lg">Send message</button>
+            <p class="cform__note" id="cform-note" role="status" aria-live="polite"></p>
+            <p class="cat__note" style="text-align:center">This opens your email app with everything filled in. Prefer to write us yourself? Email <a class="ilink" href="mailto:odicheobiakarije@gmail.com">hello@marquestudio</a>.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__top">
+        <div>
+          <span class="brand"><span class="brand__mark" aria-hidden="true">M</span><span class="brand__name">Marque<span class="brand__thin"> Studio</span></span></span>
+          <p class="foot__blurb">Beautiful, bespoke websites for portfolios, personal brands, weddings, and events. Made by hand, with care.</p>
+        </div>
+        <div class="foot__col">
+          <h4>Studio</h4>
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="start.html">Start a project</a>
+        </div>
+        <div class="foot__col">
+          <h4>Get in touch</h4>
+          <a href="contact.html">Contact</a>
+          <a href="mailto:odicheobiakarije@gmail.com">hello@marquestudio</a>
+        </div>
+      </div>
+      <div class="foot__bottom">
+        <span>© <span id="year"></span> Marque Studio</span>
+        <span>Make your mark.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
