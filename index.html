@@ -29,7 +29,7 @@
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
-        <a href="work.html">Work</a>
+        <a href="projects.html">Projects</a>
         <a href="services.html">Services</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
@@ -52,7 +52,7 @@
         </p>
         <div class="hero__cta" data-reveal>
           <a href="start.html" class="btn">Start a project</a>
-          <a href="work.html" class="btn btn--ghost">See our work</a>
+          <a href="projects.html" class="btn btn--ghost">See our projects</a>
         </div>
         <div class="hero__meta" data-reveal>
           <span>Portfolios</span><i>·</i><span>Personal brands</span><i>·</i><span>Weddings</span><i>·</i><span>Events</span>
@@ -67,33 +67,34 @@
       </div>
     </div>
 
-    <!-- ===== FEATURED WORK ===== -->
+    <!-- ===== FEATURED PROJECT (single live preview) ===== -->
     <section class="section" id="work">
       <div class="wrap">
         <div class="section__head" data-reveal>
-          <p class="label">Selected work</p>
-          <h2 class="section__title">A few things we've <span class="serif">made.</span></h2>
-          <p class="section__sub">A mix of client projects and studio concepts. See the full set, with live scrollable previews, on the work page.</p>
+          <p class="label">One, live</p>
+          <h2 class="section__title">See it for <span class="serif">yourself.</span></h2>
+          <p class="section__sub">This is a real site we built, not a mockup. Tap play and scroll through it right here.</p>
         </div>
 
-        <div class="feat">
-          <a class="mini" href="work.html" data-reveal>
-            <div class="mini__cover cover--cream"><span class="cover__crest">M<em>&amp;</em>E</span></div>
-            <span class="mini__tag">Wedding</span>
-            <div><h3>Destination Wedding</h3><p>A two-city celebration with RSVP and registry.</p></div>
-          </a>
-          <a class="mini" href="work.html" data-reveal>
-            <div class="mini__cover cover--ink"><span class="cover__mono">OO</span></div>
-            <span class="mini__tag">Portfolio</span>
-            <div><h3>Editorial Portfolio</h3><p>Quiet luxury for a data and AI engineer.</p></div>
-          </a>
-          <a class="mini" href="work.html" data-reveal>
-            <div class="mini__cover cover--plum"><span class="cover__glyph">MMTM</span></div>
-            <span class="mini__tag">Event</span>
-            <div><h3>Festival Concept</h3><p>A bold, kinetic site for a music weekender.</p></div>
-          </a>
+        <div class="feature__frame" data-reveal>
+          <div class="case__frame">
+            <div class="case__chrome"><i></i><i></i><i></i><span>Live preview</span>
+              <button type="button" class="case__reset" hidden>↺ Close</button>
+            </div>
+            <div class="case__stage" data-embed="https://odiobiak.github.io/website-me/">
+              <div class="case__cover cover--ink">
+                <span class="cover__mono">OO</span>
+                <span class="cover__terminal">odi:~/portfolio $</span>
+                <button type="button" class="case__play">▸ Scrollable preview</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="plans__note" data-reveal><a href="work.html" class="ilink">View all work →</a></p>
+
+        <div class="feature__cta" data-reveal>
+          <p>That's one. There are <b>weddings, events, and more <span class="serif">where that came from.</span></b></p>
+          <a href="projects.html" class="btn btn--light">View all projects</a>
+        </div>
       </div>
     </section>
 
@@ -107,18 +108,21 @@
         </div>
 
         <div class="feat">
-          <div class="mini" data-reveal>
+          <a class="mini" href="services.html" data-reveal>
             <div class="mini__cover cover--ink" style="aspect-ratio:16/10"><span class="serif" style="font-size:1.6rem;color:#e7e3da">Personal &amp; Portfolio</span></div>
             <div><h3>From $450</h3><p>Portfolios and personal brands for creatives and professionals who need to look the part.</p></div>
-          </div>
-          <div class="mini" data-reveal>
+            <span class="mini__cta">See pricing →</span>
+          </a>
+          <a class="mini" href="services.html" data-reveal>
             <div class="mini__cover cover--cream" style="aspect-ratio:16/10"><span class="serif" style="font-size:1.6rem;color:#6e5a38">Weddings</span></div>
             <div><h3>From $650</h3><p>Elegant wedding sites with your story, the details, RSVP, and registry.</p></div>
-          </div>
-          <div class="mini" data-reveal>
+            <span class="mini__cta">See pricing →</span>
+          </a>
+          <a class="mini" href="services.html" data-reveal>
             <div class="mini__cover cover--plum" style="aspect-ratio:16/10"><span class="serif" style="font-size:1.6rem;color:#d9b8c8">Events</span></div>
             <div><h3>From $850</h3><p>Launches, conferences, and celebrations that need a home online, fast.</p></div>
-          </div>
+            <span class="mini__cta">See pricing →</span>
+          </a>
         </div>
         <p class="plans__note" data-reveal><a href="services.html" class="ilink">See full services and pricing →</a></p>
       </div>
@@ -129,14 +133,14 @@
       <div class="wrap">
         <div class="section__head" data-reveal>
           <p class="label">How we work</p>
-          <h2 class="section__title">Simple, and kept that <span class="serif">way.</span></h2>
-          <p class="section__sub">Four steps from first hello to live site. You stay in your lane, we handle the rest.</p>
+          <h2 class="section__title">From hello, to <span class="serif">live.</span></h2>
+          <p class="section__sub">Four plain steps. No jargon, no back and forth for weeks. You stay in your lane, we handle the rest.</p>
         </div>
-        <ol class="steps">
-          <li data-reveal><span>i</span><h3>Brief</h3><p>Tell us about your project and taste. You get an instant estimate, then a fixed quote.</p></li>
-          <li data-reveal><span>ii</span><h3>Design</h3><p>We design the direction and share a live preview. You react, we refine.</p></li>
-          <li data-reveal><span>iii</span><h3>Build</h3><p>We build it out, considered and fast, usually in days rather than months.</p></li>
-          <li data-reveal><span>iv</span><h3>Launch</h3><p>We connect your domain, test everything, and put it live. Then we look after it.</p></li>
+        <ol class="timeline">
+          <li data-reveal><span class="timeline__no">01</span><h3>Brief</h3><p>Tell us about your project, your taste, and your timeline. We'll come back with an instant estimate, then a fixed price.</p></li>
+          <li data-reveal><span class="timeline__no">02</span><h3>Design</h3><p>We sketch the direction and send you a live preview link. You tell us what's working, and we refine it.</p></li>
+          <li data-reveal><span class="timeline__no">03</span><h3>Build</h3><p>We build the real thing. Considered and fast, usually done in days rather than months.</p></li>
+          <li data-reveal><span class="timeline__no">04</span><h3>Launch</h3><p>We connect your domain, check every detail, and switch it on. Then we stay on to look after it.</p></li>
         </ol>
       </div>
     </section>
@@ -199,7 +203,7 @@
         </div>
         <div class="foot__col">
           <h4>Studio</h4>
-          <a href="work.html">Work</a>
+          <a href="projects.html">Projects</a>
           <a href="services.html">Services</a>
           <a href="about.html">About</a>
           <a href="start.html">Start a project</a>
