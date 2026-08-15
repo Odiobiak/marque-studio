@@ -172,6 +172,27 @@ a.mini:hover .mini__cta{ gap:.6em; }
 .scene__side{ display:flex; flex-direction:column; align-items:flex-end; gap:.55rem; text-align:right; flex:none; }
 .scene__side .tag{ white-space:nowrap; }
 
+/* ---------- Case study storytelling ---------- */
+.case-study{ display:grid; grid-template-columns:1.15fr .85fr; gap:clamp(1.75rem,4vw,3.5rem); margin-top:1.75rem; padding-top:1.75rem; border-top:1px solid var(--line); }
+.case-study__story{ display:flex; flex-direction:column; gap:1.35rem; }
+.beat__label{
+  display:block; font-size:.72rem; letter-spacing:.18em; text-transform:uppercase;
+  font-weight:500; color:var(--oxblood); margin:0 0 .4rem;
+}
+.beat p{ margin:0; color:var(--ink-2); font-size:.97rem; max-width:52ch; }
+.case-study__aside{ display:flex; flex-direction:column; gap:1.25rem; }
+.spec{ display:flex; flex-direction:column; gap:.75rem; }
+.spec__row{ display:flex; justify-content:space-between; gap:1rem; padding-bottom:.7rem; border-bottom:1px solid var(--line-2); font-size:.87rem; }
+.spec__row:last-child{ border-bottom:0; padding-bottom:0; }
+.spec__key{ color:var(--ink-3); letter-spacing:.04em; text-transform:uppercase; font-size:.72rem; padding-top:.15rem; }
+.spec__val{ color:var(--ink); text-align:right; font-weight:500; }
+.feature-list{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:.4rem; }
+.feature-list li{ font-size:.78rem; color:var(--ink-2); border:1px solid var(--line); border-radius:2px; padding:.32em .7em; background:var(--card); }
+
+@media (max-width:920px){
+  .case-study{ grid-template-columns:1fr; gap:1.75rem; }
+}
+
 /* (scene colour backdrops removed: previews now fill the full card width) */
 
 /* ---------- Reused preview frame (cover + click-to-load iframe) ---------- */
