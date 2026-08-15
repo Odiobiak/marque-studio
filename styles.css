@@ -117,9 +117,22 @@ img{ max-width:100%; display:block; }
 .creds__inner{ display:flex; flex-wrap:wrap; gap:.65rem; justify-content:flex-start; }
 .creds__pill{
   display:inline-flex; align-items:center; gap:.5em; font-size:.82rem; color:var(--ink-2);
-  border:1px solid var(--line); border-radius:100px; padding:.55em 1.1em; background:var(--card);
+  border:1px solid var(--line); border-radius:100px; padding:.55em 1.1em .55em .85em; background:var(--card);
 }
 .creds__pill b{ color:var(--oxblood); font-weight:600; }
+.creds__seal{ flex:none; color:var(--oxblood); }
+
+/* ---------- Credentials badge grid (About / reused elsewhere) ---------- */
+.credentials{ display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(1.5rem,3vw,2.5rem); }
+.credential{ border-top:1px solid var(--ink); padding-top:1.2rem; display:flex; flex-direction:column; gap:.7rem; }
+.credential__icon{ color:var(--oxblood); }
+.credential__title{ font-family:var(--sans); font-weight:600; font-size:1rem; letter-spacing:-.005em; }
+.credential__desc{ font-size:.87rem; color:var(--ink-2); margin:0; }
+
+/* ---------- Compact trust line (Services) ---------- */
+.trustline{ display:flex; flex-wrap:wrap; gap:.5rem .8rem; align-items:center; margin:1.4rem 0 0; }
+.trustline span{ display:inline-flex; align-items:center; gap:.4em; font-size:.82rem; color:var(--ink-2); }
+.trustline svg{ flex:none; color:var(--oxblood); }
 
 /* ---------- Capability strip ---------- */
 .strip{ border-block:1px solid var(--line); background:var(--card); }
@@ -403,12 +416,14 @@ a.mini:hover .mini__cta{ gap:.6em; }
   .intel__inner,.cat,.contactp,.split{ grid-template-columns:1fr; }
   .timeline{ grid-template-columns:repeat(2,1fr); row-gap:2.5rem; }
   .timeline::before{ display:none; }
+  .credentials{ grid-template-columns:repeat(2,1fr); }
   .pillars{ grid-template-columns:1fr; gap:2rem; }
   .feat{ grid-template-columns:1fr; max-width:460px; margin:0 auto; }
   .scene__side{ align-items:flex-start; text-align:left; }
 }
 @media (max-width:560px){
   .timeline,.stats,.cform__row{ grid-template-columns:1fr; }
+  .credentials{ grid-template-columns:1fr; }
   .foot__top{ grid-template-columns:1fr 1fr; }
   .case__mask{ min-width:150px; min-height:46px; font-size:.82rem; }
 }
