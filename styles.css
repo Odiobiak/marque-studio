@@ -112,6 +112,15 @@ img{ max-width:100%; display:block; }
 .hero__meta{ display:flex; flex-wrap:wrap; align-items:center; gap:.75rem; font-size:.9rem; color:var(--ink-2); letter-spacing:.02em; }
 .hero__meta i{ color:var(--oxblood); font-style:normal; }
 
+/* ---------- Credentials strip ---------- */
+.creds{ padding:0 0 clamp(2.5rem,5vw,4rem); }
+.creds__inner{ display:flex; flex-wrap:wrap; gap:.65rem; justify-content:flex-start; }
+.creds__pill{
+  display:inline-flex; align-items:center; gap:.5em; font-size:.82rem; color:var(--ink-2);
+  border:1px solid var(--line); border-radius:100px; padding:.55em 1.1em; background:var(--card);
+}
+.creds__pill b{ color:var(--oxblood); font-weight:600; }
+
 /* ---------- Capability strip ---------- */
 .strip{ border-block:1px solid var(--line); background:var(--card); }
 .strip__inner{ display:flex; flex-wrap:wrap; gap:1rem 2.5rem; align-items:center; justify-content:center; padding:1.25rem 0; }
@@ -188,6 +197,17 @@ a.mini:hover .mini__cta{ gap:.6em; }
 .cover--plum{ background:radial-gradient(120% 120% at 30% 20%,#3a2f3f 0%,#241a2b 60%); color:#efe7ea; }
 .cover--plum .cover__glyph{ font-size:clamp(2.2rem,6vw,3.4rem); color:#d9b8c8; font-weight:500; letter-spacing:.06em; }
 .cover--plum .cover__toggle{ font-family:var(--sans); font-size:.7rem; letter-spacing:.14em; color:#b79fb0; }
+.cover--ember{ background:radial-gradient(120% 120% at 30% 20%,#4a2f22 0%,#2b1710 60%); color:#e8c9a8; }
+.cover--ember .cover__crest{ font-size:clamp(2.4rem,6.5vw,4rem); color:#e8c9a8; }
+.cover--ember .cover__crest em{ font-style:italic; color:#c97a4a; }
+.cover--ember .cover__toggle{ font-family:var(--sans); font-size:.7rem; letter-spacing:.16em; color:#b9987d; }
+.cover--blush{ background:linear-gradient(155deg,#f3e4e0 0%,#e7cfc9 100%); color:#7a4a42; }
+.cover--blush .cover__mono{ font-family:var(--serif); font-style:italic; font-size:clamp(2rem,5.5vw,3.2rem); color:#7a4a42; letter-spacing:.01em; }
+.cover--blush .cover__toggle{ font-family:var(--sans); font-size:.7rem; letter-spacing:.16em; color:#9c6a60; }
+
+/* ---------- Mini card graphics (icons on "What we make" cards) ---------- */
+.mini__icon{ display:block; margin:0 auto; }
+.mini__cover .mini__icon + .serif{ display:block; margin-top:.7rem; }
 
 .case__mask{
   position:absolute; bottom:6px; right:6px; z-index:4;
