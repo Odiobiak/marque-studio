@@ -138,7 +138,7 @@
       if (!validate()) return;
       var text = buildBrief();
       var done = function () {
-        if (noteEl) { noteEl.textContent = 'Brief copied. Paste it into an email to hello@marquestudio 💌'; noteEl.className = 'cform__note is-ok'; }
+        if (noteEl) { noteEl.textContent = 'Brief copied — paste it into an email to hello@marquestudio and hit send.'; noteEl.className = 'cform__note is-ok'; }
       };
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text, done); });

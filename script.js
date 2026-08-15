@@ -49,6 +49,14 @@
       stage.appendChild(iframe);
       stage.dataset.loaded = '1';
 
+      // cover a third-party preview badge with a small brand mark
+      if (stage.getAttribute('data-mask')) {
+        var mask = document.createElement('span');
+        mask.className = 'case__mask';
+        mask.textContent = 'Marque Studio';
+        stage.appendChild(mask);
+      }
+
       var reset = frame ? frame.querySelector('.case__reset') : null;
       if (reset) {
         reset.hidden = false;
