@@ -66,11 +66,7 @@ img{ max-width:100%; display:block; }
 .nav.is-stuck{ border-color:var(--line-2); }
 .nav__inner{ display:flex; align-items:center; justify-content:space-between; gap:1.5rem; height:74px; }
 .brand{ display:inline-flex; align-items:center; gap:.65rem; }
-.brand__mark{
-  display:grid; place-items:center; width:32px; height:32px; border-radius:50%;
-  border:1.5px solid var(--ink); color:var(--ink);
-  font-family:var(--serif); font-weight:500; font-size:1rem; line-height:1;
-}
+.brand__mark{ display:block; height:30px; width:auto; flex:none; }
 .brand__name{ font-size:1.1rem; font-weight:600; letter-spacing:-.01em; }
 .brand__thin{ color:var(--ink-2); font-weight:400; }
 .nav__links{ display:flex; gap:1.75rem; margin-left:auto; margin-right:1.5rem; }
@@ -426,7 +422,7 @@ a.mini:hover .mini__cta{ gap:.6em; }
 /* ---------- Footer ---------- */
 .foot{ background:var(--ink); color:var(--bone); padding:clamp(3rem,6vw,4.5rem) 0 2.5rem; }
 .foot__top{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:2rem; padding-bottom:2.5rem; border-bottom:1px solid rgba(242,241,236,.14); }
-.foot .brand__mark{ border-color:#f4a687; color:var(--bone); }
+.foot .brand__mark{ filter:invert(1) brightness(1.6); }
 .foot .brand__name{ color:var(--bone); }
 .foot .brand__thin{ color:#a49f93; }
 .foot__blurb{ color:#a49f93; font-size:.95rem; margin:1rem 0 0; max-width:32ch; }

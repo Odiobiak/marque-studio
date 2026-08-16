@@ -33,6 +33,10 @@ Web3Forms endpoint and swap the `mailto` submit in `script.js` / `intake.js`.
 - **Work previews** — `.case__stage[data-embed]` in `work.html`; the wedding sample is kept
   private (no link) and a brand mark masks the third-party preview badge.
 - **Theme** — fonts in each page `<head>`; colours are CSS variables at the top of `styles.css`.
+- **Logo** — `logo-mark.png` is the M. monogram used in every nav and footer; `logo-full.png`
+  is the stacked lockup used on the About page. `favicon.png` / `apple-touch-icon.png` are the
+  monogram reversed out of an ink square. On dark backgrounds the mark is flipped with
+  `filter:invert(1)`, so replacing these files is all that is needed to update the brand.
 - **Domain** — add a `CNAME` file with your custom domain, then point DNS at GitHub Pages.
 
 ## Local preview
