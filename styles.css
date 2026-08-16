@@ -239,9 +239,12 @@ a.mini:hover .mini__cta{ gap:.6em; }
 .cover--blush .cover__mono{ font-family:var(--serif); font-style:italic; font-size:clamp(2rem,5.5vw,3.2rem); color:#7a4a42; letter-spacing:.01em; }
 .cover--blush .cover__toggle{ font-family:var(--sans); font-size:.7rem; letter-spacing:.16em; color:#9c6a60; }
 
-/* ---------- Mini card graphics (icons on "What we make" cards) ---------- */
-.mini__icon{ display:block; margin:0 auto; }
-.mini__cover .mini__icon + .serif{ display:block; margin-top:.7rem; }
+/* ---------- Mini card artwork ("What we make") ---------- */
+.mini__art{ position:absolute; inset:0; width:100%; height:100%; display:block; }
+.mini__label{
+  position:absolute; left:0; right:0; bottom:1rem; text-align:center;
+  font-family:var(--serif); font-style:italic; font-size:1.35rem; z-index:2;
+}
 
 .case__mask{
   position:absolute; bottom:6px; right:6px; z-index:4;
@@ -326,35 +329,40 @@ a.mini:hover .mini__cta{ gap:.6em; }
 .feature__frame .case__stage{ aspect-ratio:16/9; }
 .feature__frame .case__stage[data-loaded]{ height:min(72vh,700px); }
 .feature__cta{
-  margin-top:clamp(1.5rem,3vw,2.5rem); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between;
-  gap:1.25rem; padding:clamp(1.4rem,3vw,2rem) clamp(1.5rem,3vw,2.25rem);
-  background:var(--ink); border-radius:6px; color:var(--bone);
+  margin-top:clamp(1.5rem,3vw,2.25rem); display:flex; flex-wrap:wrap; align-items:baseline;
+  justify-content:space-between; gap:.75rem 1.5rem; padding-top:1.25rem;
+  border-top:1px solid var(--line);
 }
-.feature__cta p{ margin:0; font-size:1.05rem; }
-.feature__cta p b{ font-weight:600; }
-.feature__cta .serif{ color:#f4a687; }
+.feature__cta p{ margin:0; font-size:1rem; color:var(--ink-2); }
+.feature__cta p b{ font-weight:500; color:var(--ink); }
+.feature__cta .serif{ color:var(--oxblood); }
+.feature__cta__link{
+  display:inline-flex; align-items:center; gap:.45em; font-size:.95rem; font-weight:500;
+  color:var(--oxblood); white-space:nowrap; transition:gap .25s;
+}
+.feature__cta__link:hover{ gap:.75em; }
 
-/* ---------- Testimonials ---------- */
-.testimonials{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:clamp(1.5rem,3vw,2.5rem); }
-.testimony--founder{ border-color:var(--ink); background:var(--ink); color:var(--bone); }
-.testimony--founder .testimony__mark{ color:#f4a687; }
-.testimony--founder .testimony__quote{ color:var(--bone); }
-.testimony--founder .testimony__who{ border-top-color:rgba(242,241,236,.16); }
-.testimony--founder .testimony__project{ color:#f4a687; }
-.testimony{
-  background:var(--card); border:1px solid var(--line); border-radius:8px;
-  padding:clamp(1.75rem,3vw,2.5rem); display:flex; flex-direction:column; gap:1.25rem;
+/* ---------- Testimonials (editorial pull-quotes, not cards) ---------- */
+.testimonials{ display:flex; flex-direction:column; gap:clamp(2.5rem,5vw,3.75rem); max-width:880px; }
+.testimony{ margin:0; padding:0 0 0 clamp(1.25rem,3vw,2.25rem); border-left:1px solid var(--line); }
+.testimony__quote{
+  font-family:var(--serif); font-size:clamp(1.3rem,2.7vw,1.95rem); line-height:1.42;
+  color:var(--ink); margin:0 0 .9rem; font-weight:300;
 }
-.testimony__mark{ font-family:var(--serif); font-style:italic; font-size:2.6rem; line-height:1; color:var(--oxblood); }
-.testimony__quote{ font-family:var(--serif); font-size:clamp(1.15rem,2vw,1.4rem); line-height:1.5; color:var(--ink); margin:0; font-weight:300; }
-.testimony__who{ display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-top:auto; padding-top:.5rem; border-top:1px solid var(--line-2); }
+.testimony__quote::before{ content:"\201C"; }
+.testimony__quote::after{ content:"\201D"; }
+.testimony__who{ display:flex; align-items:baseline; gap:.55rem; flex-wrap:wrap; }
 .testimony__name{ font-family:var(--sans); font-weight:600; font-size:.95rem; }
-.testimony__project{ font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); }
+.testimony__project{ font-size:.76rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); }
+.testimony__project::before{ content:"· "; }
+/* founder's note stays clearly labelled and visible, accented not hidden */
+.testimony--founder{ border-left-color:var(--oxblood); border-left-width:2px; }
+.testimony--founder .testimony__project{ color:var(--oxblood); }
 
 /* small contextual pull-quote attached to a project scene */
 .scene__quote{
-  font-family:var(--serif); font-style:italic; font-size:1.05rem; color:var(--ink-2);
-  border-left:2px solid var(--oxblood); padding:.1rem 0 .1rem 1rem; margin:1rem 0 0; max-width:46ch;
+  font-family:var(--serif); font-style:italic; font-size:1.15rem; line-height:1.5; color:var(--ink);
+  border-left:2px solid var(--oxblood); padding:.35rem 0 .35rem 1.1rem; margin:1.1rem 0 0; max-width:48ch;
 }
 .scene__quote cite{ display:block; font-family:var(--sans); font-style:normal; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); margin-top:.5rem; }
 
